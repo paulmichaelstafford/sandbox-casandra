@@ -13,6 +13,7 @@ services:
             - CASSANDRA_PASSWORD=cassandra
         networks:
             - shared-net
+        restart: always
 
 networks:
     shared-net:

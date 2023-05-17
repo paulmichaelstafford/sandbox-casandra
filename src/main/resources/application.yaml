@@ -1,0 +1,18 @@
+spring:
+  cassandra:
+    contact-points: 127.0.0.1
+    port: 9042
+    keyspace-name: temp_keyspace
+    username: cassandra
+    password: cassandra
+    local-datacenter: datacenter1
+    schema-action: CREATE_IF_NOT_EXISTS
+
+cassandra:
+  migration:
+    keyspace-name: temp_keyspace
+    script-locations: classpath:db/migration/cassandra
+#  contact-points: localhost
+#  port: 9042
+#  username: cassandra
+#  password: cassandra
